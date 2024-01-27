@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CGPA Calculator</title>
+</head>
+<body> 
+    <div class="overflow">
+        <p>Enter your details carefully!!!</p>
+    </div><br>
+<div class="row">
+    <div class="column left">
+        <h1>CGPA Calculator</h1>
+
+    <form id="cgpa-form">
+        <label for="title">Course Code:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="credit">Enter Credit hour/Course Unit:</label>
+        <input type="text" id="credit" name="credit" required>
+
+        <label for="grade">Enter Grade:</label>
+        <input type="text" id="grade" name="grade" required>
+        <br>
+        <button type="button" class="cgpa" onclick="addCourse()">Add Course</button><br><br>
+        <button type="button" class="cgpa" onclick="calculateCGPA()">Calculate CGPA</button>
+    </div>
+    <div class="calculator-container column right">
+    
+
+        <div id="courses-list"></div>
+
+        
+    </form>
+
+    <div id="result"></div>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
