@@ -7,15 +7,13 @@
     <title>CGPA Calculator</title>
 </head>
 <body> 
-    <div class="overflow">
-        <p>Enter your details carefully!!!</p>
-    </div><br>
+    
 <div class="row">
     <div class="column left">
         <h1>CGPA Calculator</h1>
 
     <form id="cgpa-form">
-        <label for="title">Course Code:</label>
+        <label for="title">Enter Course Code:</label>
         <input type="text" id="title" name="title" required>
 
         <label for="credit">Enter Credit hour/Course Unit:</label>
@@ -26,17 +24,16 @@
         <br>
         <button type="button" class="cgpa" onclick="addCourse()">Add Course</button><br><br>
         <button type="button" class="cgpa" onclick="calculateCGPA()">Calculate CGPA</button>
-    </div>
-    <div class="calculator-container column right">
+        <br><br><br><div class="overflow">
+        <p>Enter your details carefully!!!</p>
+        </div>
+</div>
     
-
-        <div id="courses-list"></div>
-
-        
-    </form>
-
+    <div class="calculator-container column right">
     <div id="result"></div>
-    </div>
+    <div id="courses-list"></div>
+    </div> 
+    </form>   
 </div>
 
 
