@@ -78,10 +78,9 @@ button.delete-button:hover {
 /* Create two unequal columns that floats next to each other */
 .column {
     float: left;
-    left: 50%;
-    padding: 10px;
-    height: 380px; /* Should be removed. Only for demonstration */
     margin: 0 auto;
+    box-sizing:border-box ;
+    padding-top: 50px;
   }
   
   .left {
@@ -90,14 +89,15 @@ button.delete-button:hover {
     color: rgb(250, 246, 246);
     left: 30%;
     padding: 20px 30px;
-    height: 500px;
+    height: 650px;
     border-left: 10px solid maroon;
+    margin-bottom: 50px;
   }
   
   .right {
     width: 75%;
     background-color:#c6af898f;
-    height: 500px;
+    height: 650px;
     overflow-y: scroll;
     border-right: 10px solid maroon;
   }
@@ -106,6 +106,7 @@ button.delete-button:hover {
         position: relative;
         width: 65%;
         left: 5%;
+        padding-top: 50px;
         
     }
   /* Clear floats after the columns */
@@ -115,13 +116,33 @@ button.delete-button:hover {
     clear: both;
 }
 .overflow{
-    margin: 0 auto;
     position: relative;
     background-color: #efe3e39d;
     color: maroon;
-    text-overflow: hidden;
     text-align: center;
-    width: 60%;
     padding: .1px .3px;
     font-size: 15px;
+}
+div#result{
+    background-color: #210303;
+    color: #f4f4f4;
+    padding: 0.5px 0.5px;
+    letter-spacing: 0.5em;
+}
+@media screen and (max-width: 750px ){
+    body{
+        background: url("example2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .column {
+       width: 75%;
+       margin: 20px;
+      }
+
 }
